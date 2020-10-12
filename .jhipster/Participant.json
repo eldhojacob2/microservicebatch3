@@ -1,0 +1,54 @@
+{
+  "name": "Participant",
+  "fields": [
+    {
+      "fieldName": "empId",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "batch",
+      "otherEntityRelationshipName": "participant",
+      "relationshipName": "sprint",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "learning",
+      "otherEntityRelationshipName": "participant",
+      "relationshipName": "learning",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201012132029",
+  "entityTableName": "participant",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "superleague",
+  "applications": "*",
+  "microserviceName": "superleague"
+}

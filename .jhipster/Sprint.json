@@ -1,0 +1,46 @@
+{
+  "name": "Sprint",
+  "fields": [
+    {
+      "fieldName": "sprintNo",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Status",
+      "fieldValues": "PLANNED,INPROGRESS,COMPLETED,POSTPONED"
+    },
+    {
+      "fieldName": "startDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "endDate",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "batch",
+      "otherEntityRelationshipName": "sprint",
+      "relationshipName": "batch",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201012131929",
+  "entityTableName": "sprint",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "superleague",
+  "applications": "*",
+  "microserviceName": "superleague"
+}

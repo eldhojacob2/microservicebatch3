@@ -1,0 +1,23 @@
+{
+  "name": "Learning",
+  "fields": [
+    {
+      "fieldName": "status",
+      "fieldType": "Status",
+      "fieldValues": "PLANNED,INPROGRESS,COMPLETED,POSTPONED"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201012132229",
+  "entityTableName": "learning",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "superleague",
+  "applications": "*",
+  "microserviceName": "superleague"
+}
