@@ -1,0 +1,37 @@
+{
+  "name": "Course",
+  "fields": [
+    {
+      "fieldName": "courseNo",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "courseName",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Status",
+      "fieldValues": "PLANNED,INPROGRESS,COMPLETED,POSTPONED"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201012131729",
+  "entityTableName": "course",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "superleague",
+  "applications": "*",
+  "microserviceName": "superleague"
+}

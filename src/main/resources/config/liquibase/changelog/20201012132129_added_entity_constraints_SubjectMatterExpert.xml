@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity SubjectMatterExpert.
+    -->
+    <changeSet id="20201012132129-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="sprint_id"
+                                 baseTableName="subject_matter_expert"
+                                 constraintName="fk_subject_matter_expert_sprint_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="sprint"/>
+
+    </changeSet>
+</databaseChangeLog>

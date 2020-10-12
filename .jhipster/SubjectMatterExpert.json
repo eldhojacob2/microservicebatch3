@@ -1,0 +1,54 @@
+{
+  "name": "SubjectMatterExpert",
+  "fields": [
+    {
+      "fieldName": "empId",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "contactNumber",
+      "fieldType": "Integer",
+      "fieldValidateRules": [
+        "required"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "sprint",
+      "otherEntityRelationshipName": "subjectMatterExpert",
+      "relationshipName": "sprint",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201012132129",
+  "entityTableName": "subject_matter_expert",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "superleague",
+  "applications": "*",
+  "microserviceName": "superleague"
+}
